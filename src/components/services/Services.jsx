@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import "./services.scss";
-import pdf from "../pdf/resume.pdf";
+import pdf from "../pdf/Resume.pdf";
 import { motion, useInView } from "framer-motion";
 
 const variants = {
