@@ -2,6 +2,8 @@ import { useRef, useState } from "react";
 import "./contact.scss";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import Sent from "../audio/sent.mp3";
+import Erroraud from "../audio/error.mp3";
 
 const variants = {
   initial: {
@@ -26,6 +28,12 @@ const Contact = () => {
 
   const isInView = useInView(ref, { margin: "-100px" });
 
+    const playSound = (sound) => {
+    const audio = new Audio(sound);
+    audio.play();
+  };
+
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -39,9 +47,11 @@ const Contact = () => {
       .then(
         (result) => {
           setSuccess(true);
+           playSound(Sent);
         },
         (error) => {
           setError(true);
+          playSound(Erroraud);
         }
       );
   };
