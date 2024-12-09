@@ -25,7 +25,7 @@ const Navbar = () => {
           <a href="https://www.instagram.com/d.e.v.a.n_._/">
             <img src="/instagram.png" alt="" />
           </a>
-          <a href="https://www.linkedin.com/in/devanand-binil-3932aa29b/">
+          <a href="https://www.linkedin.com/in/devanand-binil/">
             <img src="/linkedin.png" alt="" />
           </a>
         </div>
