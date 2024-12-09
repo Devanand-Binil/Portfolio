@@ -26,7 +26,7 @@ const Services = () => {
     window.location.href = 'https://github.com/Devanand-Binil';
   };
   const handleRedirecttoLinkedIn = () => {
-    window.location.href = 'https://www.linkedin.com/in/devanand-binil-3932aa29b/';
+    window.location.href = 'https://www.linkedin.com/in/devanand-binil/';
   };
 
   const isInView = useInView(ref, { margin: "-100px" });
